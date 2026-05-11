@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Data (large files go to HuggingFace Hub)
+data/lucid/*.jpg
+data/lucid/*.png
+data/nasa_pds/*.img
+data/change4/*.tif
+data/processed/*.pt
+data/processed/*.npy
+
+# Model weights (go to HuggingFace Hub)
+*.bin
+*.safetensors
+*.gguf
+*.ckpt
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs and outputs
+logs/
+outputs/
+wandb/
+runs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Isaac Sim
+sim/isaac/_build/
+sim/isaac/_cache/
