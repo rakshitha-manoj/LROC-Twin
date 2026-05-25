@@ -1,0 +1,30 @@
+dataset:
+  hf_id: pcvlab/lucid
+  hf_config: stage2_qa
+  hf_split: train
+  max_samples: 2000          # Set to 0 for full 20K before final training run
+  local_image_dir: data/lucid/images
+  processed_dir: data/processed
+  splits:
+    train: lucid_train.jsonl
+    val: lucid_val.jsonl
+    test: lucid_test.jsonl
+  ratios:
+    train: 0.75
+    val: 0.10
+    test: 0.15
+  seed: 42
+
+image:
+  source_size: [224, 224]    # LUCID native resolution (grayscale, saved as RGB PNG)
+  channels: 1                # Grayscale source, converted to RGB on save
+  format: PNG
+
+prompt:
+  system_prompt: >
+    You are a lunar surface analyst assisting an autonomous rover navigation system.
+    Analyze the provided lunar terrain image carefully.
+    Describe surface features, identify any hazards or obstacles relevant to rover traversal,
+    and provide a navigation recommendation where appropriate.
+  max_human_turns: 5
+  response_max_length: 512
