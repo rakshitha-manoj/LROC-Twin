@@ -8,12 +8,13 @@ Fine-tunes Qwen2-VL-2B on the LUCID lunar geomorphology dataset using 4-bit QLoR
 
 | Model | LUCID F1 | NASA PDS F1 | Chang'e-4 F1 | MES |
 |---|---|---|---|---|
-| Qwen2-VL-2B (frozen) | - | - | - | - |
+| Qwen2-VL-2B (frozen) | TBD | TBD | TBD | TBD |
 | LROC-Twin (LoRA r=8) | - | - | - | - |
 | LROC-Twin (LoRA r=16) | - | - | - | - |
 | LROC-Twin (LoRA r=32) | - | - | - | - |
 
-*Results populated after Phase 2 evaluation.*
+*Baseline metrics populated after Phase 2 GPU evaluation run.  
+Dataset: 2,000 LUCID samples (1500 train / 200 val / 300 test), avg. 53.6 words/response.*
 
 ## Architecture
 
