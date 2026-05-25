@@ -16,10 +16,13 @@ env/
 # Data (large files go to HuggingFace Hub)
 data/lucid/*.jpg
 data/lucid/*.png
+data/lucid/images/*.png
 data/nasa_pds/*.img
 data/change4/*.tif
 data/processed/*.pt
 data/processed/*.npy
+data/processed/*.jsonl
+
 
 # Model weights (go to HuggingFace Hub)
 *.bin
